@@ -1,15 +1,29 @@
 <!DOCTYPE html>
   <html lang="en">
     <head>
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9C4WL929P7"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-9C4WL929P7');
+        function gtag() { window.dataLayer.push(arguments) }
+        
+        var defaultConsent = {
+          analytics_storage: localStorage.getItem('silktideCookieChoice_analytics') === 'true' ? 'granted' : 'denied',
+          ad_storage: localStorage.getItem('silktideCookieChoice_advertising') === 'true' ? 'granted' : 'denied',
+          ad_user_data: localStorage.getItem('silktideCookieChoice_advertising') === 'true' ? 'granted' : 'denied',
+          ad_personalization: localStorage.getItem('silktideCookieChoice_advertising') === 'true' ? 'granted' : 'denied',
+          functionality_storage: localStorage.getItem('silktideCookieChoice_necessary') === 'true' ? 'granted' : 'denied',
+          security_storage: localStorage.getItem('silktideCookieChoice_necessary') === 'true' ? 'granted' : 'denied'
+        };
+        
+        gtag('consent', 'default', defaultConsent);
       </script>
+
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-P2J85H2F');</script>
+      <!-- End Google Tag Manager -->
 
       <title>Geriausias reabilitologas Kaune</title>
 
@@ -13532,304 +13546,21 @@
     ml('enablePopups', '')
 </script>
 
-  <!-- Meta Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '752137107052544');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=752137107052544&ev=PageView&noscript=1"
-    /></noscript>
-  <!-- End Meta Pixel Code -->
 </head>
 <body>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2J85H2F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-
-
-
-
-<div class="container-fluid" id="landing-0">
-
-    
-  
+<div class="container-fluid" id="landing-0">  
   <!-- Design -->
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-    
-
-    
-      
-      
-      
-
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-      
-      
-    
-
-
-    
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-    
-      
-      
-    
-
-    
-
-      
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      
-
-      
-        
-        
-        
-        
-      
-    
-
-    
-      
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      
-      
-        
-        
-        
-        
-      
-    
-
-    
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-  
-
-
-
-
-
-
   <!-- Notification -->
   <div id="notification" class="">
 
   
-
-    
-
-      
-
-      
-
-      
-
-      
-
-      
-        
-        
-        
-      
-
-      
-        
-        
-        
-      
-
-      
-        
-        
-      
-
-      
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-        
-
-        
-          
-          
-          
-          
-        
-
-      
-
-      
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-          
-        
-
-        
-          
-          
-          
-          
-        
-
-      
-
-
     
 
     <div class="alert ml-notification  bottom  ml-visible-only-once" role="alert">
@@ -13847,23 +13578,10 @@
             
             <button class="btn btn-one mx-1" onclick="hideParent('showCookieNotificationBar')" type="button" data-dismiss="alert" aria-label="Close">Supratau</button>
 
-            
 
-            
-            
-            
-
-            
-            
 
         </div>
     </div>
-
-    
-
-
-
-
 
 </div>
 
@@ -13908,97 +13626,6 @@
     <!-- End of skip to content link-->
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-      
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-        
-      
-
-      
-        
-      
-
-      
-        
-        
-        
-        
-        
-      
-
-      
-        
-          
-          
-          
-          
-          
-          
-          
-          
-          
-        
-        
-          
-          
-          
-          
-        
-      
-
-      
-        
-
-          
-          
-          
-          
-          
-          
-        
-        
-          
-          
-          
-        
-      
-
-      
-        
-        
-        
-      
-
     
 
     <div class="container-fluid  ml-lp-2">
@@ -14052,14 +13679,6 @@
         </div>
       </div>
     </div>
-
-    
-
-    
-
-    
-
-    
 
     
 
@@ -14122,179 +13741,10 @@
   </div>
 </div>
 
-
-
-
   
     <div class="container-fluid ml-lp-7 " data-aos="fade">
   <div class="container with-large-gutters">
 
-    
-      
-      
-
-  
-  
-  
-
-  
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-  
-    
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-      
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-      
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-  
-  
-    
-    
-  
-
-
-
-
-
-      
-  
-
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-  
-  
-
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-  
-
-
-
-      
-      
-      
-
-      
-        
-        
       
 
       <div class="row justify-content-center">
@@ -15199,92 +14649,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
 
     
 
-      
-
-  
-  
-  
-
-  
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-  
-    
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-
-      
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-  
-  
-    
-    
-  
-
-
-
-
 
 
       <div class="row large-gutters justify-content-center">
@@ -15302,10 +14666,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
       </div>
 
       
-
-
-    
-
   </div>
 </div>
 
@@ -15315,92 +14675,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
   <div class="container with-large-gutters">
 
     
-
-      
-
-  
-  
-  
-
-  
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-  
-    
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-
-      
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-  
-  
-    
-    
-  
-
-
-
 
 
 
@@ -15418,11 +14692,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
         </div>
       </div>
 
-      
-
-
-    
-
   </div>
 </div>
 
@@ -15430,172 +14699,7 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
   
     <div class="container-fluid ml-lp-48 " data-aos="fade">
   <div class="container with-large-gutters">
-
-    
-      
-      
-      
-      
-
-      
-
-  
-  
-  
-
-  
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-  
-    
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-      
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-      
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-  
-  
-    
-    
-  
-
-
-
-
-
-      
-  
-
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-  
-  
-
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-  
-
-
-
-      
-        
+ 
       
 
       <div class="row justify-content-center">
@@ -15603,31 +14707,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
           <div class="row large-gutters align-items-center">
             <div class="col-md-4 mb-5 mb-md-0">
               
-                
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-                
-                
-                
 
                 <div class="ml-lp-49">
                   <div class="   ">
@@ -15689,31 +14768,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
             <div class="col-md-4 mb-5 mb-md-0">
               
                 
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-                
-                
-                
-
                 <div class="ml-lp-54">
                   <div class="   ">
                     <div class="">
@@ -15762,9 +14816,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
 
 
 
-
-
-
                     </div>
                   </div>
                 </div>
@@ -15773,32 +14824,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
             </div>
             <div class="col-md-4">
               
-                
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-                
-                
-                
-
                 <div class="ml-lp-59">
                   <div class="   ">
                     <div class="">
@@ -15831,9 +14856,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
 <div class="row ">
   <div class="col">
     
-      
-      
-      
 
       <p style="text-align: center;">3. Paskirsime Jums efektyv&#371;<br>gydymo metod&#261; ir plan&#261;</p>
     
@@ -15845,11 +14867,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
 
 <!-- /Button -->
 
-
-
-
-
-
                     </div>
                   </div>
                 </div>
@@ -15860,13 +14877,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
         </div>
       </div>
 
-      
-
-      
-
-
-    
-
   </div>
 </div>
 
@@ -15876,131 +14886,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
   <div class="container with-large-gutters">
 
     
-
-      
-
-        
-          
-          
-          
-          
-        
-
-        
-          
-          
-          
-          
-        
-
-      
-
-      
-
-  
-  
-  
-
-  
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-  
-    
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-      
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-      
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-      
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-      
-  
-    
-    
-    
-    
-  
-  
-    
-    
-  
-
-
-
-      
-
-      
-
-      
-      
-
-      
-        
-        
-      
 
       <div class="row justify-content-center">
         <div class="col col-sm-12">
@@ -16373,201 +15258,12 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
   <div class="container with-large-gutters">
 
     
-      
-      
-      
-      
-
-      
-
-  
-  
-  
-
-  
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-  
-    
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-      
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-      
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-  
-  
-    
-    
-  
-
-
-
-
-
-      
-  
-
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-  
-  
-
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-  
-
-
-
-      
-        
-      
 
       <div class="row justify-content-center">
         <div class="col col-sm-12">
           <div class="row large-gutters align-items-start">
             <div class="col-md-4 mb-5 mb-md-0">
               
-                
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-                
-                
                 
 
                 <div class="ml-lp-80">
@@ -16832,93 +15528,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
 
     
 
-      
-
-  
-  
-  
-
-  
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-  
-    
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-
-      
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-  
-  
-    
-    
-  
-
-
-
-
-
 
       <div class="row large-gutters justify-content-center">
         <div class="col col-sm-12">
@@ -16949,93 +15558,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
 
     
 
-      
-
-  
-  
-  
-
-  
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-  
-    
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-
-      
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-  
-  
-    
-    
-  
-
-
-
-
-
 
       <div class="row large-gutters justify-content-center">
         <div class="col col-sm-12">
@@ -17065,203 +15587,12 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
   <div class="container with-large-gutters">
 
     
-      
-      
-      
-      
-
-      
-
-  
-  
-  
-
-  
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-  
-    
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-      
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-      
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-  
-  
-    
-    
-  
-
-
-
-
-
-      
-  
-
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-  
-  
-
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-  
-
-
-
-      
-
-        
-      
 
       <div class="row justify-content-center">
         <div class="col col-sm-12">
           <div class="row large-gutters align-items-center">
             <div class="col-md-6 mb-5 mb-md-0">
               
-                
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-                
-                
-                
 
                 <div class="ml-lp-105">
                   <div class="card card-105  shadow-sm">
@@ -17295,8 +15626,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
 <div class="row mb-4">
   <div class="col">
     
-      
-      
       
 
       <h2 style="margin-top: 20px;">Gydom&#371;j&#371; vizit&#371; kaina nuo &euro;50</h2>
@@ -17343,31 +15672,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
             </div>
             <div class="col-md-6">
               
-                
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-                
-                
-                
 
                 <div class="ml-lp-110">
                   <div class="card card-110  shadow-sm">
@@ -17467,202 +15771,12 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
   <div class="container with-large-gutters">
 
     
-      
-      
-      
-      
-
-      
-
-  
-  
-  
-
-  
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-  
-    
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-      
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-      
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-  
-    
-    
-    
-    
-  
-  
-    
-    
-  
-
-
-
-
-
-      
-  
-
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-  
-  
-
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-      
-      
-      
-      
-    
-
-  
-
-
-
-      
-
-        
-      
 
       <div class="row justify-content-center">
         <div class="col col-sm-12">
           <div class="row large-gutters align-items-center">
             <div class="col-md-6 mb-5 mb-md-0">
               
-                
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-                
-                
                 
 
                 <div class="ml-lp-117">
@@ -17746,31 +15860,6 @@ Individuali <strong>reabilitacija</strong> ir <strong>kineziterapija</strong><br
             <div class="col-md-6">
               
                 
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-    
-    
-    
-  
-
-
-
-
-
-
-                
-                
-                
-
                 <div class="ml-lp-122">
                   <div class="card card-122  shadow-sm">
                     <div class="card-body">
