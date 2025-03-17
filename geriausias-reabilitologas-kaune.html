@@ -5,15 +5,19 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { window.dataLayer.push(arguments) }
         
+        var cookieData = JSON.parse(localStorage.getItem('cc_cookie')) || {};
+
+        consentData = cookieData.data || {};
+
         var defaultConsent = {
-          analytics_storage: localStorage.getItem('silktideCookieChoice_analytics') === 'true' ? 'granted' : 'denied',
-          ad_storage: localStorage.getItem('silktideCookieChoice_advertising') === 'true' ? 'granted' : 'denied',
-          ad_user_data: localStorage.getItem('silktideCookieChoice_advertising') === 'true' ? 'granted' : 'denied',
-          ad_personalization: localStorage.getItem('silktideCookieChoice_advertising') === 'true' ? 'granted' : 'denied',
-          functionality_storage: localStorage.getItem('silktideCookieChoice_necessary') === 'true' ? 'granted' : 'denied',
-          security_storage: localStorage.getItem('silktideCookieChoice_necessary') === 'true' ? 'granted' : 'denied'
+            analytics_storage: consentData['analytics_storage'] || 'denied',
+            ad_storage: consentData['ad_storage'] || 'denied',
+            ad_user_data: consentData['ad_user_data'] || 'denied',
+            ad_personalization: consentData['ad_personalization'] || 'denied',
+            functionality_storage: consentData['functionality_storage'] || 'denied',
+            security_storage: consentData['security_storage'] || 'denied',
         };
-        
+
         gtag('consent', 'default', defaultConsent);
       </script>
 
