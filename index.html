@@ -10717,19 +10717,24 @@
 <p>&Scaron;ioje svetain&#279;je renkami J&#363;s&#371; asmens duomenys yra apsaugoti pagal visus <a href="https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr/index_lt.htm" target="_blank">BDAR</a> reglamento reikalavimus<br></p>
 <p></p>
         </div>
-        <div class="d-block d-md-inline-block button-block">                       <button class="btn btn-one mx-1" onclick="hideParent('showCookieNotificationBar')" type="button" data-dismiss="alert" aria-label="Close">Supratau</button>                                     </div>
+        <div class="d-block d-md-inline-block button-block">
+          <button class="btn btn-one mx-1" onclick="hideParent('showCookieNotificationBar')" type="button" data-dismiss="alert" aria-label="Close">Supratau</button>
+        </div>
     </div>   
 
 
 
 
 
-</div>    <script type="text/javascript" move-to-head="">
+</div>
+<script type="text/javascript" move-to-head="">
         function hideParent(parentKey){
-            localStorage.setItem(parentKey, 'false');           checkIfSticky( function(stickyNavbar, stickyNotification) {
+            localStorage.setItem(parentKey, 'false');
+            checkIfSticky( function(stickyNavbar, stickyNotification) {
               stickyNavbar.style.top = 0;
             })
-        }       $(document).ready(function(){
+        }
+        $(document).ready(function(){
             var showNotification = localStorage.getItem('showCookieNotificationBar');
             if (showNotification === 'false'){
                 $( ".ml-visible-only-once" ).css( "display", "none" );
@@ -10737,7 +10742,8 @@
               var notificationHeight = stickyNotification.offsetHeight;
               stickyNavbar.style.top = notificationHeight + 'px';
             })
-        })       function checkIfSticky (callback) {
+        });
+        function checkIfSticky (callback) {
             var stickyNavbar = document.querySelector('header.sticky-top');
             var stickyNotification = document.querySelector('#notification.sticky-top');
             if (stickyNavbar && stickyNotification) {
